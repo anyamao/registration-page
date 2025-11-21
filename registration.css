@@ -1,0 +1,251 @@
+div,p,button{
+    font-family:"Noto Sans", sans-serif;
+}
+
+html,body{
+    height:100%;
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+.first{  /* the flexbox itself*/
+    display:flex;
+    width:100%;
+    height:100%;
+    position:relative;
+
+}
+
+.leftside{ /*all that is to the left*/
+    z-index:3;
+    background-color:rgb(5, 5, 5);
+    flex: 1;
+    position:relative;
+    overflow:hidden;
+
+
+}
+.background-image{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    z-index:1;
+
+}
+
+.logo-div{
+    background-color:white;
+    position:absolute;
+    padding:10px;
+    border-radius:90px;
+    z-index:2;
+    top:17%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    
+    
+}
+.logo{
+    width:90px;
+}
+.name-div{
+    z-index:2;
+    color:white;
+    background-color: rgb(15, 51, 150);
+
+
+    position:absolute;
+    top:30%;
+    left:0;
+    width:100%;
+
+
+}
+.title{
+    text-align:center;
+    font-size:60px;
+    padding:0px;
+    margin:0px;
+    padding-top:10px;
+}
+.slogan{
+    text-align:center;
+    font-size:40px;
+    padding:0px;
+    padding-bottom:10px;
+    margin:0px;
+}
+.date{
+    position:absolute;
+    z-index:2;
+    top:97%;
+    font-size:14px;
+    text-align:center;
+    color: rgba(255, 255, 255, 0.753);
+    width:100%;
+
+} /* end of the left side*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rightside{ /* all that is to the right*/
+    background-color:rgba(233, 233, 233, 0.7);
+    flex:2;
+    display:flex;
+    position:relative;
+    flex-direction:column;
+    flex-wrap:wrap;
+    
+}
+
+.upper-text-div{
+    flex:1;
+    z-index:5;
+    max-width:1000px;
+    
+}
+.upper-text{
+    font-size:25px;
+    font-weight:50s0;
+    margin-top:160px;
+    padding:0px;
+    padding-left:40px;
+    padding-right:40px;
+    
+
+}
+.upper-text-sec{
+    font-size:25px;
+    font-weight:600;
+    padding:0px;
+    padding-left:40px;
+
+    text-decoration:underline;
+    margin-bottom:90px;
+
+} /* done there*/
+
+
+
+
+
+
+
+.form-div{
+    flex: 1;
+    z-index:5;
+    background-color:rgb(248, 248, 248);
+    box-shadow: 5px 5px 10px rgb(218, 218, 218);
+}
+.lets{
+    margin-left:40px;
+    font-size:25px;
+    font-weight:500;
+}
+
+.register-grid{
+    justify-content:center;
+    max-width:800px;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap:0px;
+    margin-top:20px;
+    margin-left:40px;
+    margin-right:100px;
+    padding-bottom:40px;
+    
+}
+.form{
+    max-width:250px;
+
+    justify-self:center;
+    width:250px;
+    border-radius:7px;
+    border-color:rgb(209, 209, 209);
+    border-style:solid;
+    border-width:2px;
+    box-shadow: inset 3px 3px 10px  rgba(0, 0, 0, 0.062);
+    height:30px;
+}
+.form:active{
+    border-color:rgb(61, 184, 255);
+}
+.req{
+    max-width:250px;
+    margin-bottom:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lower-text-div{ /* done there*/
+    flex:1;
+    z-index:5;
+}
+
+
+
+
+.button-create{
+    margin-top:40px;
+    margin-left:40px;
+    background-color:   rgb(15, 51, 150);
+    color:white;
+    font-size: 20px;
+    border-style:none;
+    border-radius:10px;
+    padding:15px;
+    padding-left:30px;
+    padding-right:30px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+.button-create:hover{
+    background-color:  rgb(24, 127, 153);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.274);
+}
+.have-account{
+    margin-top:30px;
+    margin-left:40px;
+    font-size: 20px;
+    display:flex;
+    gap:15px;
+}
+.have-link{
+    display:inline-block;
+    color:rgb(104, 104, 104);
+    font-weight:600;
+}
